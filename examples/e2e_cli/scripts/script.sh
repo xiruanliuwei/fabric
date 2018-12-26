@@ -13,9 +13,9 @@ echo
 
 CHANNEL_NAME="$1"
 : ${CHANNEL_NAME:="mychannel"}
-: ${TIMEOUT:="60"}
+: ${TIMEOUT:="180"}
 COUNTER=1
-MAX_RETRY=5
+MAX_RETRY=15
 ORDERER_CA=/home/liuwei/Go/src/github.com/hyperledger/fabric/peer/crypto/ordererOrganizations/example.com/orderers/orderer.example.com/msp/tlscacerts/tlsca.example.com-cert.pem
 PEER0_ORG1_CA=/home/liuwei/Go/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt
 PEER0_ORG2_CA=/home/liuwei/Go/src/github.com/hyperledger/fabric/peer/crypto/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls/ca.crt
